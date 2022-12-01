@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         val editTextLoanPeriod: EditText = findViewById(R.id.editLoanPeriod)
         val editTextInterestRate: EditText = findViewById(R.id.editInterestRate)
         val textViewMonthlyPayment: TextView = findViewById(R.id.textViewMonthlyPayment)
+        val textViewCarLoan: TextView = findViewById(R.id.textViewCarLoan)
+        val textViewInterest: TextView = findViewById(R.id.textViewInterest)
 
         val buttonReset: Button = findViewById(R.id.buttonReset)
         val buttonCalculate: Button = findViewById(R.id.buttonCalculate)
@@ -67,7 +69,8 @@ class MainActivity : AppCompatActivity() {
             val interest: Float = (carLoan * interestRate * loanPeriod).toFloat()
             val monthlyPayment: Float = ((carLoan + interest) / loanPeriod / 12)
             textViewMonthlyPayment.text = String.format("%.2f", monthlyPayment)
-990
+            textViewCarLoan.text = String.format("%.2f", carLoan)
+            textViewInterest.text = String.format("%.2f", interest)
         }
     }
 }
