@@ -5,6 +5,8 @@
     <string name="loan_period">Loan Period (year)</string>
     <string name="interest_rate">Interest Rate (%)</string>
     <string name="monthly_payment">Monthly Payment</string>
+    <string name="car_loan">Car Loan</string>
+    <string name="interest">Interest</string>
     <string name="calculate">Calculate</string>
     <string name="reset">Reset</string>
     <string name="value_required">Value Required</string>
